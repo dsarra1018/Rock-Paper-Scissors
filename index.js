@@ -13,7 +13,7 @@ var div_wins = document.querySelector(".no-wins");
 var div_loses = document.querySelector(".no-loses");
 var div_ties = document.querySelector(".no-ties");
 var div_winrate = document.querySelector(".div-winrate");
-var outcome_display = document.querySelector("h1");
+var outcome_display = document.querySelector("h2");
 
 // A function that runs through a round of rps until the user quits
 play_rps = () => {
@@ -54,6 +54,12 @@ play_rps = () => {
   update_stat();
 
 };
+
+// A function that handles the onclick event for the buttons
+play_move = () => {
+  
+}
+
 
 // A function updates the game stats
 update_stat = () => {
