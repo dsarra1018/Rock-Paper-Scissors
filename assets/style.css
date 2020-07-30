@@ -1,3 +1,7 @@
+.jumbotron {
+  text-align: center;
+}
+
 hr {
   width: 75%;
 }
@@ -39,6 +43,11 @@ hr {
   padding: 85px 85px;
 }
 
+button:hover {
+  background-color: #264653;
+  color: #ffffff;
+}
+
 button:focus {
   outline: 0;
 }
@@ -46,3 +55,4 @@ button:focus {
 i {
   font-size: 50px;
 }
+
