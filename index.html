@@ -31,14 +31,31 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-6" id="comp-side">
+      <div class="col-5" id="comp-side">
         <h2>Computer Side</h2>
       </div>
-      <div class="col-6" id="user-side">
-        <h2>User Side</h2>
+      <div class="col-1"></div>
+      <div class="col-1">
+        <div class="vertical-line"></div>
+      </div>
+      <div class="col-5" id="user-side">
+        <div class="container-fluid">
+          <div class="row" id="top-row">
+            <button id="rock-btn" value="0" name="rock"> <i class="far fa-hand-rock"></i></button>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <button id="paper-btn" value="1" name="paper"><i class="far fa-hand-paper"></i></button>
+            </div>
+            <div class="col-6">
+              <button id="scissors-btn" value="2" name="scissors"><i class="far fa-hand-scissors"></i></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </body>
 <script type="text/javascript" src="./index.js"></script>
+<script src="https://kit.fontawesome.com/bf73769ee2.js" crossorigin="anonymous"></script>
 </html>
