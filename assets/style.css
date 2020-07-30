@@ -12,11 +12,37 @@ hr {
 }
 
 #comp-side {
-  background: #ce796b;
+  /*  background: #ce796b; */
   text-align: center;
 }
 
+.vertical-line {
+  margin-top: 30px;
+  border-left: 3px solid #000000;
+  height: 800px;
+}
+
 #user-side {
-  background: #495867;
+  /* background: #495867; */
   text-align: center;
+}
+
+#top-row {
+  display: grid;
+  place-items: center;
+}
+
+#rock-btn, #paper-btn, #scissors-btn {
+  border-radius: 50%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 85px 85px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+i {
+  font-size: 50px;
 }
