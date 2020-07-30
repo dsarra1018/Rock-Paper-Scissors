@@ -1,0 +1,22 @@
+hr {
+  width: 75%;
+}
+
+.statistics {
+  text-align: center;
+}
+
+.div-winrate {
+  padding: .2rem;
+  border-radius: 8px;
+}
+
+#comp-side {
+  background: #ce796b;
+  text-align: center;
+}
+
+#user-side {
+  background: #495867;
+  text-align: center;
+}
