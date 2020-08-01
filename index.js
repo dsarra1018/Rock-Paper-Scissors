@@ -50,7 +50,6 @@ play_rps = () => {
     is_playing = confirm("Do you still want to play?");
   }
 
-  winrate_func();
   update_stat();
 
 };
@@ -71,10 +70,9 @@ update_stat = () => {
   div_loses.innerHTML = comp_score;
   div_ties.innerHTML = ties;
   div_winrate.innerHTML = winrate;
-};
 
-// A function that tells you how well you're doing in terms of winrate
-winrate_func = () => {
+  // A function that tells you how well you're doing in terms of winrate
+
   if (winrate >= 80) {
     div_winrate.style.backgroundColor = "#2A9d8f";
   } else if (winrate < 80 && winrate >= 60) {
@@ -82,6 +80,8 @@ winrate_func = () => {
   } else {
     div_winrate.style.backgroundColor = "#e76f51";
   }
+
 };
+
 
 play_rps();
