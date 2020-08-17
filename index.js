@@ -21,7 +21,13 @@ var scissorsBtn = document.querySelector("#scissors-btn");
 play_rps = (move) => {
   comp_move = random_number_generator();
 
-  
+  if (move === comp_move) {
+    outcome_display.textContent = `It's a tie. Both played ${moves[move]}`;
+  } else if ((move === 0 && comp_move === 1) || (move === 1 && comp_move === 2) || (move === 2 && comp_move === 2)) {
+    outcome_display.textContent = `You lost. Computer: ${moves[comp_move]}, User: ${moves[move]}`;
+  } else {
+    outcome_display.textContent = `You won. Computer: ${moves[comp_move]}, User: ${moves[move]}`;
+  }
 }
 
 // Event listeners for the buttons
