@@ -14,6 +14,9 @@ var div_loses = document.querySelector(".no-loses");
 var div_ties = document.querySelector(".no-ties");
 var div_winrate = document.querySelector(".div-winrate");
 var outcome_display = document.querySelector("h2");
+var rockBtn = document.querySelector("#rock-btn");
+var paperBtn = document.querySelector("#paper-btn");
+var scissorsBtn = document.querySelector("#scissors-btn");
 
 // A function that runs through a round of rps until the user quits
 play_rps = () => {
