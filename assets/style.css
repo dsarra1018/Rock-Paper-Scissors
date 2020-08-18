@@ -16,18 +16,22 @@ hr {
 }
 
 #comp-side {
-  /*  background: #ce796b; */
   text-align: center;
+}
+
+#comp-move {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 60px;
 }
 
 .vertical-line {
   margin-top: 15px;
   border-left: 3px solid #000000;
-  height: 20rem;
+  height: 40vh;
 }
 
 #user-side {
-  /* background: #495867; */
   text-align: center;
 }
 
