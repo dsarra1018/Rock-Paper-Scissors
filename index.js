@@ -23,11 +23,17 @@ play_rps = (move) => {
 
   if (move === comp_move) {
     outcome_display.textContent = `It's a tie. Both played ${moves[move]}`;
+    ties++;
   } else if ((move === 0 && comp_move === 1) || (move === 1 && comp_move === 2) || (move === 2 && comp_move === 2)) {
     outcome_display.textContent = `You lost. Computer: ${moves[comp_move]}, User: ${moves[move]}`;
+    comp_score++;
   } else {
     outcome_display.textContent = `You won. Computer: ${moves[comp_move]}, User: ${moves[move]}`;
+    user_score++; 
   }
+
+  num_games++;
+  update_stats();
 }
 
 // Event listeners for the buttons
@@ -53,3 +59,11 @@ scissorsBtn.addEventListener("click", (e) => {
 random_number_generator = () => {
   return Math.floor(Math.random() * 3);
 };
+
+// A function that handles updating the game's stats
+update_stats = () => {
+  div_games.textContent = num_games;
+  div_wins.textContent = user_score;
+  div_loses.textContent = comp_score;
+  div_ties.textContent = ties;
+}
